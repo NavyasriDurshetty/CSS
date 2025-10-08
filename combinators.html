@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* possible combinators selectors */
+        /*child combinator > */
+        .parent>h1{
+            color: red;
+        }
+       .parent>h3{
+            color: blue;
+        }
+        .parent>h2{
+            color: green;
+        }
+        .child>h1{
+            color: purple;
+        }
+        .child>p{
+            color: orange;
+        }
+        .child>h2{
+            color: brown;
+        }
+        p{
+            color: grey;
+        }
+        /* descendant combinator (space) */
+        .parent h1{
+            border: 1px solid red;
+        }
+        .parent h2{
+            border: 1px solid green;
+        }
+        .parent h3{
+            border: 1px solid blue;
+        }
+        .child h1{
+            border: 1px solid purple;
+        }
+        .child p{
+            border: 1px solid orange;
+        }
+        .child h2{
+            border: 1px solid brown;
+        }
+        p{
+            border: 1px solid grey;
+        }
+        /* general sibling combinator ~ */
+        h1~p{
+            background-color: lightblue;
+        }
+        h2~p{
+            background-color: lightgreen;
+        }
+        h3~p{
+            background-color: lightpink;
+        }
+        p~p{
+            background-color: lightgrey;
+        }
+    /*adjacent sibling combinator + */
+    h1+p{ 
+        font-size: 20px;   
+    }
+    h2+p{
+        font-size: 25px;
+    }
+    h3+p{
+        font-size: 30px;
+    }
+    p+p{
+        font-size: 35px;
+    }
+        </style>
+</head>
+
+<body>
+    <div class="parent">
+      <h1>Arey Entra edi</h1>
+      <h2>Enjoy pandage</h2>
+      <h1>Sare le paduko inkem undhi</h1>
+      <h3>Evvar raa meeranthaa</h3>
+      <div class="child">
+        <h1>Wall</h1>
+        <p>Sairam Sairam</p>
+        <p>Karma ra babuk</p>
+        <h2>Eye thaginchukunte manchidhi</h2>
+      </div>
+
+      <p>Sare sare ley eno em anukuntan ani jarugutundaa enti</p>
+    </div>
+  </body>
+</html>
+    
+</body>
+</html>
