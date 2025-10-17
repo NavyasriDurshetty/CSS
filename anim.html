@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:rgb(214, 212, 209);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  
+        }
+
+        .div1 {
+            height:210px;
+            width: 210px;
+            border-radius: 50%;
+            align-items:center;
+            background-color: yellow;
+            animation-name: float;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            position: absolute;
+            box-shadow: -10px -10px 20px rgba(0,0,0,0.5);
+            animation-timing-function: ease-in-out;
+            margin-left: 220px;
+            margin-top: 220px;
+        }
+
+        .div2 {
+            height:200px;
+            width: 200px;
+            border-radius: 50%;
+            align-items:center;
+            background-color: orange;
+            position: relative;
+        }
+
+      @keyframes float {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: -10px -10px 20px rgba(0,0,0,0.3);
+  }
+  25% {
+    transform: translate(-50%, -49%) scale(1.03);
+    box-shadow: -12px -12px 22px rgba(0,0,0,0.35);
+  }
+  50% {
+    transform: translate(-50%, -48%) scale(1.06);
+    box-shadow: -14px -14px 25px rgba(0,0,0,0.4);
+  }
+  75% {
+    transform: translate(-50%, -49%) scale(1.03);
+    box-shadow: -12px -12px 22px rgba(0,0,0,0.35);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: -10px -10px 20px rgba(0,0,0,0.3);
+  }
+}
+    
+    </style>
+</head>
+<body>
+    <div class = "div1"></div>
+    <div class = "div2"></div>
+
+</body>
+</html>
